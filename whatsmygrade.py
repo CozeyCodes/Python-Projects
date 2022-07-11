@@ -1,0 +1,276 @@
+
+
+class Grade:
+
+    def __init__(self, name, classs, Computer, English, Health, Mathematics, Nepali, OptMaths, Science, Social):
+        self.name = name
+        self.classs = classs
+
+        self.Computer = Computer
+        self.English = English
+        self.Health = Health
+        self.Mathematics = Mathematics
+        self.Nepali = Nepali
+        self.OptMaths = OptMaths
+        self.Science = Science
+        self.Social = Social
+
+    def condition(self):
+
+        if self.Computer >= 90:
+            self.GPA_Comp = 4
+
+        elif self.Computer >=80:
+            self.GPA_Comp = 3.6
+            
+        elif self.Computer >=70:
+            self.GPA_Comp = 3.2
+
+        elif self.Computer >=60:
+            self.GPA_Comp = 2.8
+
+        elif self.Computer >=50:
+            self.GPA_Comp = 2.4
+
+        elif self.Computer >=40:
+            self.GPA_Comp = 2.0
+
+        elif self.Computer >=30:
+            self.GPA_Comp = 1.6
+
+        elif self.Computer >=20:
+            self.GPA_Comp = 1.2
+
+        else:
+            self.GPA_Comp = 0.8
+
+        #######################
+
+        if self.English >= 90:
+            self.GPA_Eng = 4
+
+        elif self.English >=80:
+            self.GPA_Eng = 3.6
+            
+        elif self.English >=70:
+            self.GPA_Eng = 3.2
+
+        elif self.English >=60:
+            self.GPA_Eng = 2.8
+
+        elif self.English  >=50:
+            self.GPA_Eng = 2.4
+
+        elif self.English  >=40:
+            self.GPA_Eng = 2.0
+
+        elif self.English  >=30:
+            self.GPA_Eng = 1.6
+
+        elif self.English >=20:
+            self.GPA_Eng = 1.2
+
+        else:
+            self.GPA_Eng = 0.8
+
+        #######################
+
+        if self.Health >= 90:
+            self.GPA_Hea = 4
+
+        elif self.Health >=80:
+            self.GPA_Hea = 3.6
+            
+        elif self.Health >=70:
+            self.GPA_Hea = 3.2
+
+        elif self.Health >=60:
+            self.GPA_Hea = 2.8
+
+        elif self.Health  >=50:
+            self.GPA_Hea = 2.4
+
+        elif self.Health  >=40:
+            self.GPA_Hea = 2.0
+
+        elif self.Health  >=30:
+            self.GPA_Hea = 1.6
+
+        elif self.Health >=20:
+            self.GPA_Hea = 1.2
+
+        else:
+            self.GPA_Hea = 0.8
+
+        #######################
+
+        if self.Mathematics >= 90:
+            self.GPA_Mat = 4
+
+        elif self.Mathematics >=80:
+            self.GPA_Mat = 3.6
+            
+        elif self.Mathematics >=70:
+            self.GPA_Mat = 3.2
+
+        elif self.Mathematics >=60:
+            self.GPA_Mat = 2.8
+
+        elif self.Mathematics  >=50:
+            self.GPA_Mat = 2.4
+
+        elif self.Mathematics  >=40:
+            self.GPA_Mat = 2.0
+
+        elif self.Mathematics  >=30:
+            self.GPA_Mat = 1.6
+
+        elif self.Mathematics >=20:
+            self.GPA_Mat = 1.2
+
+        else:
+            self.GPA_Mat = 0.8
+
+        #######################
+
+        if self.Nepali >= 90:
+            self.GPA_Nep = 4
+
+        elif self.Nepali >=80:
+            self.GPA_Nep = 3.6
+            
+        elif self.Nepali >=70:
+            self.GPA_Nep = 3.2
+
+        elif self.Nepali >=60:
+            self.GPA_Nep = 2.8
+
+        elif self.Nepali  >=50:
+            self.GPA_Nep = 2.4
+
+        elif self.Nepali  >=40:
+            self.GPA_Nep = 2.0
+
+        elif self.Nepali  >=30:
+            self.GPA_Nep = 1.6
+
+        elif self.Nepali >=20:
+            self.GPA_Nep = 1.2
+
+        else:
+            self.GPA_Nep = 0.8
+
+        #######################
+
+        if self.OptMaths >= 90:
+            self.GPA_Opt = 4
+
+        elif self.OptMaths >=80:
+            self.GPA_Opt = 3.6
+            
+        elif self.OptMaths >=70:
+            self.GPA_Opt = 3.2
+
+        elif self.OptMaths >=60:
+            self.GPA_Opt = 2.8
+
+        elif self.OptMaths  >=50:
+            self.GPA_Opt = 2.4
+
+        elif self.OptMaths  >=40:
+            self.GPA_Opt = 2.0
+
+        elif self.OptMaths  >=30:
+            self.GPA_Opt = 1.6
+
+        elif self.OptMaths >=20:
+            self.GPA_Opt = 1.2
+
+        else:
+            self.GPA_Opt = 0.8
+
+        #######################
+
+        if self.Science >= 90:
+            self.GPA_Sci = 4
+
+        elif self.Science >=80:
+            self.GPA_Sci = 3.6
+            
+        elif self.Science >=70:
+            self.GPA_Sci = 3.2
+
+        elif self.Science >=60:
+            self.GPA_Sci = 2.8
+
+        elif self.Science  >=50:
+            self.GPA_Sci = 2.4
+
+        elif self.Science  >=40:
+            self.GPA_Sci = 2.0
+
+        elif self.Science  >=30:
+            self.GPA_Sci = 1.6
+
+        elif self.Science >=20:
+            self.GPA_Sci = 1.2
+
+        else:
+            self.GPA_Sci = 0.8
+    
+        #######################
+
+        if self.Social >= 90:
+            self.GPA_Soc = 4
+
+        elif self.Social >=80:
+            self.GPA_Soc = 3.6
+            
+        elif self.Social >=70:
+            self.GPA_Soc = 3.2
+
+        elif self.Social >=60:
+            self.GPA_Soc = 2.8
+
+        elif self.Social >=50:
+            self.GPA_Soc = 2.4
+
+        elif self.Social >=40:
+            self.GPA_Soc = 2.0
+
+        elif self.Social >=30:
+            self.GPA_Soc = 1.6
+
+        elif self.Social >=20:
+            self.GPA_Soc = 1.2
+
+        else:
+            self.GPA_Soc = 0.8
+    
+    def calculator(self):
+
+        self.total = self.GPA_Comp + self.GPA_Eng + self.GPA_Nep + self.GPA_Hea + self.GPA_Mat + self.GPA_Opt + self.GPA_Sci + self.GPA_Soc
+        self.GPA = self.total / 8
+
+    def show(self):
+        print(f"{self.name} From Class {self.classs} GOT {self.GPA}.")
+
+
+
+
+name = input("Name: ")
+classs = int(input("Class: "))
+
+Computer = int(input("Computer: "))
+English = int(input("English: "))
+Health = int(input("Health: "))
+Mathematics = int(input("Mathematics: "))
+Nepali = int(input("Nepali: "))
+OptMaths = int(input("OptMaths: "))
+Science = int(input("Science: "))
+Social = int(input("Social: "))
+
+x = Grade(name.title(), classs, Computer, English, Health, Mathematics, Nepali, OptMaths, Science, Social)
+x.condition()
+x.calculator()
+x.show()
