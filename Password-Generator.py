@@ -4,13 +4,16 @@ while 1:
     
     chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890@#$%&"
 
-    len = int(input("Enter the Length of your Password ->>> "))
+    c = 0
 
-    amt = int(input("How many Passwords do you want? ->>> "))
+    len = int(input("How Long? ->>> "))
 
-    for i in range(0,len):
+    amt = int(input("How Many? ->>> "))
+
+    for i in range(0,amt):
         password = ""
-        for i in range(0,amt):
+        c+=1
+        for i in range(0,len):
             x = random.choice(chars)
             password +=x
-        print("Your Passowrd is", password)
+        print(f"{c}. Password ->>> {password}.")
