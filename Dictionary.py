@@ -1,0 +1,65 @@
+
+#importing our questions
+from questions import quiz
+
+
+
+#displays welcome message to the user
+def intro():
+    print("\nWelcome To Our Quiz Game!\n Type [skip] To Jump The Question.")
+    ask = input("Would you like to start? ->>> ").upper()
+    if "Y" in ask:
+        print("\n")
+        return True
+    else:
+        print("\n")
+        exit()
+
+#function to check the answer
+def check_ans(question, answer, attempts, score):
+
+    if quiz[question]['answer'].lower() == answer:
+        print(f"\nCorrect Answer!\nNew Score ->>> {score+1}\n")
+        return True
+    else:
+        print(f"\nWrong Answer!\nAttempts Left ->>> {attempts-1}\n")
+        return False
+        
+    
+#calling the intro function
+check = intro()
+
+#for loop for questioning the user
+if check:
+    score = 0
+    i = 1
+    for question in quiz:
+        attempts = 3
+        while attempts > 0:
+            print(f"{i}. {quiz[question]['question']}")
+            answer = input("Your Answer ->>> ").lower()
+            if answer == "skip":
+                i+=1
+                break
+            check = check_ans(question, answer, attempts, score)
+            if check:
+                i+=1
+                score +=1                
+                break
+            else:
+                attempts -=1
+        
+
+#printing the questions and answers
+def qna():
+    x = 1
+    for question in quiz:
+        print(f"{x}. {quiz[question]['question']}")
+        print(f"->>> {quiz[question]['answer']}")
+        x+=1
+    print("\n")
+    
+print("Thanks For Playing!💗")
+print(f"Your Final Score is {score}!🎉")
+print("Check Out The Answers Below!👇\n")
+qna()
